@@ -19,6 +19,8 @@ return new class extends Migration
             $table->decimal('harga', 10, 2);
             $table->integer('stok');
             $table->string('foto', 255);
+            $table->timestamps();
+            $table->softDeletes();
         });
     }
 

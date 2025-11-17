@@ -18,6 +18,8 @@ return new class extends Migration
             $table->decimal('total', 10, 2);
             $table->string('bukti_pembayaran', 255);
             $table->enum('status_pembayaran', ['pending', 'sukses', 'gagal']);
+            $table->timestamps();
+            $table->softDeletes();
         });
     }
 
