@@ -73,7 +73,7 @@
                                             <option value="">-- Pilih Kategori --</option>
                                             @foreach ($categories as $category)
                                                 <option value="{{ $category->id }}"
-                                                    {{ old('kategori_id') == $category->id ? 'selected' : '' }}>
+                                                    {{ old('kategori_id', $product->kategori_id) == $category->id ? 'selected' : '' }}>
                                                     {{ $category->nama }}
                                                 </option>
                                             @endforeach

@@ -10,7 +10,12 @@
         <!-- Responsive Table -->
         <div class="card">
             <div class="card-header d-flex justify-content-between align-items-center">
-                <h5 class="mb-0">Daftar Produk</h5>
+                <div class="d-flex align-items-center gap-2">
+                    <h5 class="mb-0">Daftar Produk</h5>
+                    <a href="{{ route('products.create') }}" class="btn btn-primary btn-sm">
+                        <i class="bx bx-plus"></i> Tambah Data
+                    </a>
+                </div>
                 <!-- Search Form -->
                 <form action="{{ route('products.index') }}" method="GET" class="d-flex" style="width: 300px;">
                     <input type="text" name="search" class="form-control form-control me-2" placeholder="Cari..."

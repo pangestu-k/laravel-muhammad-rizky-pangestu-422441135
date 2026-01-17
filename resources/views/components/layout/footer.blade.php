@@ -1,16 +1,18 @@
 <!-- Footer -->
-<footer class="content-footer footer bg-footer-theme">
-    <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row
-    flex-column">
-        <div class="mb-2 mb-md-0">
-            ©
-            <script>
-                document.write(new Date().getFullYear());
-            </script>
-            , made with by
-            <a href="https://themeselection.com" target="_blank" class="footer-link fwbolder">ThemeSelection</a>
+<footer class="content-footer footer bg-footer-theme text-center">
+    <div class="container-xxl py-2">
+        <div class="d-flex flex-column align-items-center justify-content-center">
+            <div class="text-center">
+                ©
+                <script>
+                    document.write(new Date().getFullYear());
+                </script>
+                , made with by
+                <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">ThemeSelection</a>
+            </div>
         </div>
     </div>
 </footer>
 <!-- / Footer -->
 <div class="content-backdrop fade"></div>
+
