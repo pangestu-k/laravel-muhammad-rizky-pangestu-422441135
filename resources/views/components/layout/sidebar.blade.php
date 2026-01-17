@@ -46,11 +46,13 @@
                 <div data-i18n="Products">Products</div>
             </a>
         </li>
-        <li class="menu-item {{ Request::is('users*') ? 'active' : '' }}">
-            <a href="{{ route('users.index') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-user"></i>
-                <div data-i18n="Users">User</div>
-            </a>
-        </li>
+        @if (Auth::user()->role === 'admin')
+            <li class="menu-item {{ Request::is('users*') ? 'active' : '' }}">
+                <a href="{{ route('users.index') }}" class="menu-link">
+                    <i class="menu-icon tf-icons bx bx-user"></i>
+                    <div data-i18n="Users">User</div>
+                </a>
+            </li>
+        @endif
     </ul>
 </aside>

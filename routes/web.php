@@ -21,5 +21,5 @@ Route::middleware('auth')->group(function () {
 
     Route::resource('/products', ProductController::class);
     Route::resource('/category', CategoryController::class);
-    Route::resource('/users', UserController::class);
+    Route::resource('/users', UserController::class)->middleware('admin');
 });
